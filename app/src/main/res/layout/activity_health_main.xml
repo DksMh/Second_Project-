@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/user_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="홍길동님의 정보"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="139dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="성별" />
+
+            <TextView
+                android:id="@+id/user_gender"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:textColor="#78BBFB"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/table_boarder"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="나이" />
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="168dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_boarder"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#78BBFB"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="키" />
+
+            <TextView
+                android:id="@+id/user_height"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#78BBFB"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/table_boarder"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="몸무게" />
+
+            <TextView
+                android:id="@+id/user_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/table_boarder"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#78BBFB"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:id="@+id/avg_bmi"
+        android:layout_below="@id/user_infor"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#e6f0f7"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="표준 체중"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#dcecf7"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="BMI"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/avg_bmi_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/avg_bmi"
+        >
+
+        <TextView
+            android:id="@+id/avg_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_boarder"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/user_bmi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/table_boarder"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:layout_below="@id/avg_bmi_num">
+
+        <Button
+            android:id="@+id/walk"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="걷 기 운 동" />
+
+        <Button
+            android:id="@+id/bicycle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="자 전 거 운 동" />
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:text="기 록 확 인" />
+    </LinearLayout>
+
+</RelativeLayout>
